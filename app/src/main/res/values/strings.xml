@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Navigation Component</string>
+    <string name="fragment_first">First Fragment</string>
+    <string name="fragment_pass_data">Pass Text Data</string>
+    <string name="fragment_recycler_view">RecyclerView</string>
+    <string name="fragment_receive_data">Receive Text Data</string>
+    <string name="color">Color</string>
+</resources>

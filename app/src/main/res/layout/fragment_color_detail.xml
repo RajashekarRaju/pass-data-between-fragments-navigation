@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".ColorDetailFragment">
+
+    <TextView
+        android:id="@+id/color_name_detail_text_vew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorGrey"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:gravity="center"
+        tools:text="@string/color" />
+
+</FrameLayout>

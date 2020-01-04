@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.developersbreach.navigationcomponent.HomeFragment"
+        android:label="Home fragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_passDataFragment"
+            app:destination="@id/passDataFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_colorListFragment"
+            app:destination="@id/colorListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.developersbreach.navigationcomponent.FirstFragment"
+        android:label="First fragment"
+        tools:layout="@layout/fragment_first" />
+
+    <fragment
+        android:id="@+id/passDataFragment"
+        android:name="com.developersbreach.navigationcomponent.PassDataFragment"
+        android:label="Pass data fragment"
+        tools:layout="@layout/fragment_pass_data" >
+        <argument
+            android:name="PassDataFragmentArgs"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/colorListFragment"
+        android:name="com.developersbreach.navigationcomponent.ColorListFragment"
+        android:label="Color list fragment"
+        tools:layout="@layout/fragment_color_list" >
+        <action
+            android:id="@+id/action_colorListFragment_to_colorDetailFragment"
+            app:destination="@id/colorDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/colorDetailFragment"
+        android:name="com.developersbreach.navigationcomponent.ColorDetailFragment"
+        android:label="Color detail fragment"
+        tools:layout="@layout/fragment_color_detail" >
+        <argument
+            android:name="ColorDetailFragmentArgs"
+            app:argType="com.developersbreach.navigationcomponent.Color" />
+    </fragment>
+
+</navigation>
