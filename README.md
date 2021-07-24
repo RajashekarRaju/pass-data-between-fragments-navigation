@@ -1,2 +1,3 @@
-# PassDataUsingNavigationComponentWithKotlin
-This is sample android app demonstrates on how to use NavigationComponent to pass data between fragments, adding destinations to navigation graph with kotlin.
+# Pass data between fragments with navigation
+This is simple android app which demonstrates on how to use Navigation library to pass data between
+fragments, adding destinations to navigation graph with kotlin.
